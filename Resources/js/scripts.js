@@ -74,5 +74,5 @@ $(document).ready(
 );
 
 function f1(){
-//     alert('Still updating!');
+    // alert('Beta!');
 }
