@@ -12,6 +12,8 @@ $(document).ready(
         //       return a;
         //     }
         // }
+
+
         // sticky nav
         $('.about-section').waypoint(
             function(direction){
@@ -58,21 +60,6 @@ $(document).ready(
                     // $('nav').removeClass('sticky');
                 }
             }
-        );
-        // // list-color
-        // $('.list-icon')(
-        //     function(){
-        //         if($('.list-icon').hasClass('.list-icon')){
-                   
-        //         }
-        //     }
-        // );
-            
-          
-        
+        );       
     }
 );
-
-function f1(){
-//     alert('Beta!');
-}
