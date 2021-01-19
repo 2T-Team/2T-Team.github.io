@@ -1,2 +1,2 @@
-# https://github.com/2T-Team/2T-Team.github.io/edit/main/README.md
-[Website](https://github.com/2T-Team/2T-Team.github.io/edit/main/README.md)
+# https://2t-team.github.io/
+[Website](https://2t-team.github.io/)
