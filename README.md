@@ -1,2 +1,2 @@
 
-[s](https://2t-team.github.io/){:target="_blank"}
+## https://2t-team.github.io/
