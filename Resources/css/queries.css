@@ -4,12 +4,24 @@
 }
 @media screen and (min-width: 768px) {
 
-
+    
 }
 @media screen and (min-width: 992px) {  
     .logo
     {
         margin-left: 15%;
+    }
+    .nav-link
+    {
+        color: white !important;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .nav-link:hover
+    {
+        border-bottom: 2px solid white;
     }
 }
 
