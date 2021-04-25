@@ -36,9 +36,25 @@ header
     position: absolute;
     text-transform: uppercase;
     left: 10%;
-    top: 40vh;
     font-family: 'Lato',sans-serif;
     color: white;
+    transition: all .5s;
+}
+.nav-link
+{
+    color: white !important;
+}
+.logo
+{
+    margin-left: 0%;
+}
+.bg-test
+{
+
+}
+.z2000
+{
+    z-index:2000;
 }
 /* *******************************************/
 /* ************** CLEARFIX *******************/
