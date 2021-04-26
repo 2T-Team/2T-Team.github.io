@@ -22,6 +22,16 @@ body{
 /* *******************************************/
 /* ************** REUSEABLE ******************/
 /* *******************************************/
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 2000;
+}
+.bg-bluet
+{
+    background-color:rgba(55, 76, 131,.95);
+}
 h2{
     color:#051748;
     /* color: #e67e22; */
@@ -294,90 +304,64 @@ a{
 /* *********************************************/
 /* ************** FOOTER **************/ 
 /* *********************************************/
-/* footer h3{
+ footer h3{
     color: #e6e9f0;
     font-size: 130%;
+    text-align: center;
 }
-
+footer li
+{
+    list-style: none;
+    color: #051748;
+}
+footer a
+{
+    color: black;
+    transition: color .15s;
+}
+footer a:hover
+{
+    color: white;
+}
+footer ul
+{
+    padding: 0;
+}
 footer{
+
     margin: auto;
     margin-top: 0 !important;
-    text-align: center;
     background-image: linear-gradient(45deg,rgba(83, 95, 128,0.7) 55%,rgba(8, 31, 98,0.75)) ,url("../img/background2.jpeg") ;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     color: #000000;
-    padding: 10px;
+    padding-top: 20px;
     padding-bottom: 0px;
 
+}
+.author
+{
+    text-align: center;
 }
 .footer-box{
     margin: 20px 30px;
 }
 
-footer a{
-    text-decoration: none;
-}
-    
-footer li{
-    list-style: none;
-    width: 50%;
-}
 
-.author{
-    float: left;
-}
-
-.author p{
-    size: 120%;
-    margin-top: 30px;
-    word-spacing: 50x;
-    line-height: 130%;
-    text-align: center;
-}
-
-.contact{
-    display: inline-block;
-}
-
-.social-icons{
-    margin-top: 30px;
-}
-
-.social-icons li{
-    display: inline-block;
-    width: 15%;
-}
-
-.social-icons li i{
-    font-size: 300%;
+li i{
+    font-size: 125%;
     text-align: center;
     vertical-align: middle;
     transition: 0.5s;
 }
 
-.social-icons li i:hover,
-.social-icons li i:active{
+li i:hover,
+li i:active{
     transform: scale(1.15);
     color: #0f8ac4;
 }
 
-.social-icons a{
-    text-decoration: none;
-}
-
-.social-icons li{
-    color: #051748;
-}
-
-.author p img{
-    width: 5%;
-} */
-ul li ul {    
-    position:relative;
-    top: -50px;
-}
 /* *******************************************/
 /* ************** CLEARFIX *******************/
 /* *******************************************/

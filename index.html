@@ -26,9 +26,9 @@
 <body>
     <!-- HEADER -->
     <header id="home">
-        <nav class="navbar navbar-expand-lg bg-test navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-test navbar-dark" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#home"><img class="logo" src="./Resources/img/pts/HLogo.png" alt="logo"> </a>
+                <a class="navbar-brand" href="#home"><img class="logo" id="logo" src="./Resources/img/pts/HLogo.png" alt="logo"> </a>
                 <button class="navbar-toggler" onclick="hidText()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -150,35 +150,25 @@
     </section>
     <!-- FOOTER -->
     <footer id="foot">
-        <div class="row footer-box">
-            <div class="contact col-lg-6">
+        <div class="row footer-box container-fluid no-mlr">
+            <div class="contact col-md-6 6">
                 <h3>Contact</h3>
-                <ul class="social-icons">
-                        <li>
-                            <i class="fab fa-facebook d-inline-block" aria-label="facebook-icon"></i>
-                            <ul >
-                                <li><a href="https://www.facebook.com/klwm2k1/" target="_blank">HElo</a></li>
-                                <li><a href="https://www.facebook.com/frostpixel/">BNMC</a></li>
-                            </ul>
-                            
-                        </li>
-                        <li>
-                            <a href="https://github.com/gone2808" target="_blank"><i class="fab fa-github" aria-label="github-icon"></i></a>
-                        </li>
-                        <li>
-                            <a href="tel:84972098766" target="_blank"><i class="fas fa-phone" aria-label="phone-icon"></i></a>
-                        </li>
-                   
-                        <li> <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=nguyenmoe2k1@gmail.com"
-                            target="_blank"><i class="fab fa-google-plus-square" aria-label="gmail-icon"></i></a>
-                        </li>
-                </ul>
+                <ul class="d-block" >
+                    <li><i class="fab fa-facebook" aria-label="facebook-icon"></i><a href="https://www.facebook.com/klwm2k1/" target="_blank">&nbsp;Ngô Quang Hải</a></li>
+                    <li><i class="fab fa-fw" aria-label="facebook-icon"></i><a href="https://www.facebook.com/frostpixel/">Bạch Ngọc Minh Châu</a></li>
+                    <li><i class="fab fa-github" aria-label="github-icon"></i><a href="https://github.com/gone2808" target="_blank">&nbsp;gone2808</a></li>
+                    <li><i class="fas fa-phone" aria-label="phone-icon"></i><a href="tel:84972098766" target="_blank">&nbsp;(+84)972098766</a></li>
+                    <li><i class="fab fa-google-plus-square" aria-label="gmail-icon"></i><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=nguyenmoe2k1@gmail.com"
+                        target="_blank">&nbsp;nguyenmoe2k1@gmail.com</a></li>
+                    <li><i class="fab fa-fw d-none d-sm-inline-block" aria-label="gmail-icon"></i><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=chaubnmhe153019@fpt.edu.vn"
+                            target="_blank">chaubnmhe153019@fpt.edu.vn</a></li>
+                </ul> 
             </div>
-            <div class="author col-lg-6">
+            <div class="author col-md-6">
                 <h3>Our Team</h3>
                 <p>
                     Two tables team<br>
-                    &copy; Copyright 2020 - Two tables team
+                    &copy; Copyright 2021 - Two tables team
                 </p>   
             </div>    
         </div>

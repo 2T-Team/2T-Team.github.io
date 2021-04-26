@@ -1,10 +1,17 @@
 /* SM */
 @media all and (min-width: 576px) {  
-
+    footer ul{
+        width: 80%;
+        margin-left: 20%;
+    }
 }
 /* MD */
 @media all and (min-width: 768px) {
-
+    footer ul
+    {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 /* LG */
 @media all and (min-width: 992px) {  
@@ -40,6 +47,11 @@
     }
     .about2 ul{
         padding-left: 15%;
+    }
+    footer ul
+    {
+        width: 75%;
+        margin-left: 25%;
     }
 }
 /* XL */
