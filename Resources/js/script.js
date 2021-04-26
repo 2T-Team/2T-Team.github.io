@@ -1,10 +1,11 @@
 function hidText()
 {
+    var nS=document.getElementById('nav-button').getAttribute("aria-expanded");
     var hT=document.getElementById('headerText');
-    if(hT.style.top=="40vh")
-        hT.style.top="70vh";
+    if(nS=='false')
+      hT.style.top="40vh";
     else
-        hT.style.top="40vh";
+      hT.style.top="70vh";
 }
 
 window.onscroll = function() {mySticky()};
