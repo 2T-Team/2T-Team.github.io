@@ -1,151 +1,54 @@
-/* Big tablet to 1200px */
-@media only screen and (max-width:1200px){
-    .main-nav{
-        visibility: visible;
+/* SM */
+@media all and (min-width: 576px) {  
+    footer ul{
+        width: 80%;
+        margin-left: 20%;
     }
-    .row .app img
+    .row70
     {
-        width: 40%;
-    }
-}
-
-/* Small tablet to big tablet from 768px to 1023px */
-@media only screen and (max-width:1023px){
-    html{
-        font-size: 16px;
-    }
-    .social-icons li{
-        width: 20%;
-        margin-left: 10px;
-    }
-    .social-icons{
-        padding-left: 0px;
-    }
-    .social-icons li i{
-        font-size: 250%;
-    }
-    .tools-picture{
         width: 70%;
-    }
-    .tools-box li{      
-        width: 100%;   
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .tools-box{
-        margin-bottom: 0px;
-    }
-    .main-nav{
-        visibility: visible;
+        margin: 0 auto;
+        padding-bottom: 50px;
     }
 }
-
-/* Small phones to small tablets */
-@media only screen and (max-width: 767px){
-    .row img{
-        width: 100%;
-        margin:0px;
-    }
-    .row .app img
+/* MD */
+@media all and (min-width: 768px) {
+    footer ul
     {
-        width: 65%;
-    }
-    .main-nav{
-        display: none;
-    }
-    .social-icons li{
-        margin-right: 10px;
-     }
-    .logo{
-        width: 35%;
-        margin-left: 80px;
-    }
-    h1{
-        font-size: 280%;
-        word-spacing: 2px;
-        line-height: 120%;
-    }
-    .heading-main-box{
-        top: 40%;
-    }
-    .mobile-nav-icon{
-        visibility: visible;
-        display: block;
-    }
-    
-
-    .sticky .mobile-nav-icon{
-        margin-top: -32px;
-    }   
-    
-    .sticky .main-nav{
-        margin-left: auto;
-        font-size: 150%;
-        margin-top: 0px;
-        margin-bottom: 10px;
-        margin: 0px;
-        padding-right: auto;
-    background-color: rgba(55, 76, 131,.95);
-
-    position: relative;
-    top:-33px;
-
-    }
-    section{
-        padding: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-@media only screen and (max-width: 590px){
-    
-   
-    .mobile-nav-icon{
-        top: 40px;
-        right: 70px;
-    }
-    .sticky .mobile-nav-icon{
-       margin-top: -20px;
-    }
-    .social-icons{
-        font-size: 50%;
-        margin-top: 45px;
-        padding-left: 0px;
-    }
-    .social-icons li{
-       margin-right: 5px;
-    }
-    .tools-picture{
         width: 100%;
-        margin-left: -10px;
-    }
-    .about-section .row{
-        width:100%;
+        margin-left: 0;
     }
 }
+/* LG */
+@media all and (min-width: 992px) {  
+    .logo
+    {
+        margin-left: 15%;
+    }
+    .nav-link
+    {
+        color: white !important;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-top: 0px;
+    }
+    .nav-link:hover
+    {
+        border-bottom: 2px solid white;
+    }
+    footer ul
+    {
+        width: 75%;
+        margin-left: 25%;
+    }
+}
+/* XL */
+@media all and (min-width: 1200px) { 
 
-/* Small phones from 0 to 480px */
-@media only screen and(max-width: 320px){
-    /* aligning is same as 590px  but fix for some device smaller*/
-    
-    
-    
-    h1{
-        top: 50px
-    }
-    .heading-main-box{
-        margin-top: 100px;
-        top: -150%;
-    }
-    .social-icons{
-        font-size: 5%;
-        margin-top: 45px;
-    }
-}   
+}
+/* XXL */
+@media all and (min-width: 1400px) { 
 
-/* @media only screen and(max-height: 767px){
-    .heading-main-box{
-        visibility: hidden;
-    }
-} */
+}

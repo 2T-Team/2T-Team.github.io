@@ -1,149 +1,73 @@
-/* Big tablet to 1200px */
-@media only screen and (max-width:1200px){
-    .clubs-picture{
-        width: 60%;
+/* SM */
+@media all and (min-width: 576px) {  
+    footer ul{
+        width: 80%;
+        margin-left: 20%;
     }
-    .clubs-box li{
-        /* float: none; */
+}
+/* MD */
+@media all and (min-width: 768px) {
+    footer ul
+    {
         width: 100%;
-        margin-bottom: 15px;
+        margin-left: 0;
     }
-    .main-nav{
-        visibility: visible;
-    }
- 
+    .heading-main-box h1
+    {
+        font-size: 50px !important;
+    } 
 }
-
-/* Small tablet to big tablet from 768px to 1023px */
-@media only screen and (max-width:1023px){
-    html{
-        font-size: 16px;
+/* LG */
+@media all and (min-width: 992px) { 
+    .heading-main-box h1
+    {
+        font-size: 65px !important;
+    } 
+    .logo
+    {
+        margin-left: 15%;
     }
-    .social-icons li{
-        width: 20%;
-    }
-    .social-icons li i{
-        font-size: 250%;
-    }
-    .tools-picture{
-        width: 70%;
-    }
-    .tools-box li{      
-        width: 100%;   
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .tools-box{
-        margin-bottom: 0px;
-    }
-    .main-nav{
-        visibility: visible;
-    }
-}
-
-/* Small phones to small tablets */
-@media only screen and (max-width: 767px){
-    
-    .main-nav{
-        display: none;
-    }
-    
-    .logo{
-        width: 35%;
-        margin-left: 80px;
-    }
-    h1{
-        font-size: 280%;
-        word-spacing: 2px;
-        line-height: 120%;
-    }
-    .heading-main-box{
-        top: 40%;
-    }
-    .mobile-nav-icon{
-        visibility: visible;
-        display: block;
-    }
-    
-
-    .sticky .mobile-nav-icon{
-        margin-top: -32px;
-    }   
-    
-    .sticky .main-nav{
-        margin-left: auto;
-        font-size: 150%;
+    .nav-link
+    {
+        color: white !important;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
         margin-top: 0px;
-        margin-bottom: 10px;
     }
-    section{
-        padding: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .nav-link:hover
+    {
+        border-bottom: 2px solid white;
+    }
+    .forHover img
+    {
+        box-shadow: #575757 0px 5px 15px 5px;
+        filter: brightness(80%) blur(0.03px);
     }
     .Clubs-Type{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 120%;
-        font-weight: 700;
-        color: #000000;
-        /* position: absolute; */
-        transition: all .7s;
+        transform: scale(1);
+        opacity: 0;
+    }
+    .forHover:hover .Clubs-Type,
+    .forHover:active .Clubs-Type{
+        transform: scale(1.3);
         opacity: 1;
-        
+    }
+    .about2 ul{
+        padding-left: 15%;
+    }
+    footer ul
+    {
+        width: 75%;
+        margin-left: 25%;
     }
 }
-@media only screen and (max-width: 590px){
-    
-    .heading-main-box{
-        font-size: 50%;
-    }
-    .mobile-nav-icon{
-        top: 40px;
-        right: 70px;
-    }
-    .sticky .mobile-nav-icon{
-       margin-top: -20px;
-    }
-    .social-icons{
-        font-size: 70%;
-        margin-top: 45px;
-    }
+/* XL */
+@media all and (min-width: 1200px) { 
 
-    .clubs-picture{
-        margin-left: -10px;
-        width: 100%;
-    }
-    .tools-picture{
-        width: 100%;
-        margin-left: -10px;
-    }
-    .about-section .row{
-        width:100%;
-    }
 }
+/* XXL */
+@media all and (min-width: 1400px) { 
 
-/* Small phones from 0 to 480px */
-@media only screen and(max-width: 320px){
-    /* aligning is same as 590px  but fix for some device smaller*/
-    
-    
-    
-    h1{
-        top: 50px
-    }
-    .heading-main-box{
-        margin-top: 100px;
-        top: -150%;
-    }
-    .social-icons{
-        font-size: 5%;
-        margin-top: 45px;
-    }
-}   
-
-/* @media only screen and(max-height: 767px){
-    .heading-main-box{
-        visibility: hidden;
-    }
-} */
+}
