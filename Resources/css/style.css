@@ -16,32 +16,39 @@ html{
     background-color: #e6e9f0;
     text-rendering: optimizeLegibility;
 }
+
 body{
     overflow-x: hidden;
 }
-/* *******************************************/
-/* ************** REUSEABLE ******************/
-/* *******************************************/
-.sticky {
-    position: fixed !important;
-    top: 0 !important;
-    width: 100% !important;
-    z-index: 2000;
+/* *********************************************/
+/* ************* REUSABLE COMPONENT ************/
+/* ******************************************* */
+.row{
+    width: 80%;
+    margin: 0 auto;
 }
-.bg-bluet
-{
-    background-color:rgba(55, 76, 131,.95);
+
+h1,h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
+h1{
+    font-size: 330%;
+    font-weight: 500;
+    word-spacing: 5px;
+    color: white;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+
 h2{
     color:#051748;
     /* color: #e67e22; */
     font-size: 180%;
     font-weight: 700;
     text-align: center;
-    padding-top: 30px;
-    margin-top: 0px !important;
-    margin-bottom: 30px !important;
-    text-transform: uppercase;
+    margin-top: 30px;
 }
 
 h2::after{
@@ -53,96 +60,157 @@ h2::after{
     margin:  0 auto;
     margin-top: 5px;
 }
-.no-mlr
-{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-/* *******************************************/
-/* ************** HEADER *********************/
-/* *******************************************/
-header
-{
-    background-image: linear-gradient(45deg,rgba(83, 95, 128,0.7) 55%,rgba(8, 31, 98,0.75)) ,url(../img/background6.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-}
-.nav-link
-{
-    color: white !important;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid white;
-    padding-left: 5px !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    transition: all .25s;
-    font-weight: 600;
-    font-size: 25px;
-    margin-top: 10px;
-}
-.logo
-{
-    margin-left: 0%;
-    height: 75px;
-}
-.heading-main-box
-{
-    position: absolute;
-    text-transform: uppercase;
-    font-family: 'Lato',sans-serif;
-    color: white;
-    transition: all .5s;
-}
-.heading-main-box h1
-{
-    margin-left: 10%;
-}
-/* *********************************************/
-/* ************* ABOUT SECTION *****************/
-/* *********************************************/
-.about-section
-{
-    background-color: #E6E9F0;
-}
-.about-section h2{
-    margin-bottom: 60px;
-    text-align: center;
-    
-} 
-.about-section .p-long
-{
+
+.p-long{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 530;
     text-align: center;
     color:  #5a5a5a;
     font-size: 22px;
-    margin: 0 auto ;
     margin-top: 40px;
-    margin-bottom: 0px !important;
+    margin-bottom: 40px;
     width: 80%;
+    margin-left: 10%;
     line-height: 140%;
-    display: block;
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
 }
 
-.about-section p
-{
-    margin-bottom: 0 !important;
+section{
+    padding: 65px;
 }
+
+.heading-icon{
+    color: #051748;
+    font-size: 80%;
+    margin-right: 10px;
+    transition: all .3s;
+}
+.heading-icon:hover,
+.heading-icon:active{
+    transform: scale(1.1);
+}
+/* *********************************************/
+/* ***************** HEADER ********************/
+/* *********************************************/
+
+.logo{
+    float: left;
+    width: 230spx;
+    margin-left: 80px;
+    margin-top: -30px;
+    margin-bottom: -100px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 80px;
+    margin-top: 50px;
+    text-align: center;    
+}
+
+.main-nav li{
+    display: inline;
+    margin-right: 30px;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 140%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e6e9f0 ;
+}
+
+header{
+    background-image: linear-gradient(45deg,rgba(83, 95, 128,0.7) 55%,rgba(8, 31, 98,0.75)) ,url("../img/background6.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-55%);
+    width: 80%;
+}
+
+/* *********************************************/
+/* ***************** Sticky*********************/
+/* *********************************************/
+
+.sticky{
+    background-color:rgba(55, 76, 131,.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    
+}
+
+.sticky .logo{
+    width: 130px;
+    margin-left: 40px;
+    margin-top: -26px;
+    margin-bottom: -25px;
+}
+
+.sticky .main-nav{
+    margin-top: 20px;
+}
+
+.sticky .main-nav li a{
+   
+    font-size: 120%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+}
+/* *********************************************/
+/* ************* Mobile *************************/
+/* *********************************************/
+
+.mobile-nav-icon{
+    visibility: hidden;
+    display: none;
+    font-size: 200%;
+    color: #051748;
+    position: absolute;
+    top: 60px;
+    right: 70px;
+    
+}
+
+/* *********************************************/
+/* ************* ABOUT SECTION *****************/
+/* *********************************************/
+
+.about-section h2{
+    margin-bottom: 60px;
+} 
+
 .about2{
     font-family: 'Times New Roman', Times, serif;
 }
 
 .about2 h3{
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    margin-top: 15px;
     text-align: center;
     color: #051748;
     margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 30px;
 }
 .about2 h3::after{
     content: " ";
@@ -153,15 +221,8 @@ header
     margin:  0 auto;
     margin-top: 13px;
 }
-.about2 ul
-{
-    display: inline-block;
-    margin: 0;
-    padding-bottom: 20px;
-    padding-left: 0px;
-}
 .about2 li{
-    margin-left: 25%;
+    margin-left: 20%;
     list-style: none;
 }
 .about2 li p{
@@ -173,10 +234,12 @@ header
     display: inline-block;
     margin-right: 12px;
     color: #0f8ac4;
-    animation: 0.5s Rainbow infinite alternate; 
+    animation: 0.5s Glads infinite alternate; 
 }
-@keyframes Rainbow{
+
+@keyframes Glads{
     to {
+        transform: scale(1.1);
         color: #d11f1fd0;
     }
 }
@@ -186,31 +249,48 @@ header
 /* *********************************************/
 
 .clubs-section{
-    background-color: #DCE0E9 !important;
+    background-color:   #d8dde7bd;
+    padding-bottom: 80px;
 }
 .clubs-section h2{
     margin-bottom: 80px;
 }
+
 .clubs-box{
     margin-left:1%;
     margin-bottom: 20px;
 }
 
-.clubs-box a{
+.clubs-box li {
+    list-style: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+
+.forHover{
+    
+    justify-content: center;
+}
+.clubs-box li{
     position: relative;
+}
+
+.clubs-box a{
     text-decoration: none;
 }
 
 .clubs-picture{
     
-    width: 100%;
+    width: 90%;
     border-radius: 20px;
     border:  3px solid #c2eafd;
     box-shadow: #575757 0px 5px 15px 1px;
-    filter: brightness(120%);
     transition: all .5s;
-    margin-bottom: 30px;
-    
+    filter: brightness(80%) blur(0.03px);
+    margin-bottom: 40px;
 }
 
 .Clubs-Type{
@@ -219,13 +299,10 @@ header
     font-weight: 700;
     color: #000000;
     /* position: absolute; */
-    text-align: center;
-    text-decoration: none;
-    transition: all .5s;
-    transform: scale(1.3);
-    opacity: 1;
+    transition: all .7s;
+    opacity: 0;
+    
 }
-
 .forHover:hover img,
 .forHover:active img{
     transform: scale(1.1);
@@ -233,6 +310,11 @@ header
     filter: brightness(120%) ;
 }
 
+.forHover:hover .Clubs-Type,
+.forHover:active .Clubs-Type{
+    transform: scale(1.3);
+    opacity: 1;
+}
 
 /* *********************************************/
 /* ************* TOOLS SECTION *****************/
@@ -244,6 +326,7 @@ header
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom: 50px;
 }
 
 .tools-section h2{
@@ -255,13 +338,13 @@ header
     font-size: 90%;
     font-weight: 800;
     color: #000000;
+    /* position: absolute; */
     transition: all .7s;
-    text-align: center;
-    text-decoration: none;
+    /* opacity: 0; */
 }
 
 .tools-picture{
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     border:  3px solid #92d4f3;
     box-shadow: #575757 0px 5px 15px 1px;
@@ -276,12 +359,11 @@ header
     margin-left: 5%;
     margin-bottom: 20px;
 }
-a{
-    text-decoration: none !important;
-}
+
 .tools-box a{
-    position: relative;
+    text-decoration: none;
 }
+
 .tools-box li{
     list-style: none;
     width: 50%;
@@ -301,72 +383,86 @@ a{
     font-weight: 900;
 }
 
+
 /* *********************************************/
 /* ************** FOOTER **************/ 
 /* *********************************************/
- footer h3{
+footer h3{
     color: #e6e9f0;
     font-size: 130%;
-    text-align: center;
 }
-footer li
-{
-    list-style: none;
-    color: #051748;
-}
-footer a
-{
-    color: black;
-    transition: color .15s;
-}
-footer a:hover
-{
-    color: white;
-}
-footer ul
-{
-    padding: 0;
-}
-footer{
 
+footer{
     margin: auto;
-    margin-top: 0 !important;
+    text-align: center;
     background-image: linear-gradient(45deg,rgba(83, 95, 128,0.7) 55%,rgba(8, 31, 98,0.75)) ,url("../img/background2.jpeg") ;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     color: #000000;
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding: 10px;
 
-}
-.author
-{
-    text-align: center;
 }
 .footer-box{
     margin: 20px 30px;
 }
 
+footer a{
+    text-decoration: none;
+}
+    
+footer li{
+    list-style: none;
+    width: 50%;
+}
 
-li i{
-    font-size: 125%;
+.author{
+    float: left;
+}
+
+.author p{
+    size: 120%;
+    margin-top: 30px;
+    word-spacing: 50x;
+    line-height: 130%;
+    text-align: center;
+}
+
+.contact{
+    display: inline-block;
+    /* float: right; */
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons li{
+    display: inline-block;
+    width: 15%;
+}
+
+.social-icons li i{
+    font-size: 300%;
     text-align: center;
     vertical-align: middle;
     transition: 0.5s;
 }
 
-li i:hover,
-li i:active{
+.social-icons li i:hover,
+.social-icons li i:active{
     transform: scale(1.15);
     color: #0f8ac4;
 }
 
-/* *******************************************/
-/* ************** CLEARFIX *******************/
-/* *******************************************/
-.clearfix::after{
-    content: " ";
-    display: table;
-    clear: both;
+.social-icons a{
+    text-decoration: none;
+}
+
+.social-icons li{
+    color: #051748;
+}
+
+.author p img{
+    width: 5%;
 }
