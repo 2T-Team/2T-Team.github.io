@@ -5,6 +5,7 @@ function hidText()
     var hTh1=document.getElementById('headerText_h1');
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     if(nS=='false')
+    {
       if(vh<650)
       {
         hTh1.style.marginLeft="10%";
@@ -15,7 +16,9 @@ function hidText()
         hT.style.top="40vh";
         hTh1.style.marginLeft="10%";
       }
+    }
     else
+    {
       if(vh<650)
       {
         hTh1.style.marginLeft="30%";
@@ -26,6 +29,7 @@ function hidText()
         hT.style.top="70vh";
         hTh1.style.marginLeft="10%";
       }
+    }
 }
 
 window.onscroll = function() {mySticky()};
