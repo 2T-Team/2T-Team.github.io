@@ -5,7 +5,7 @@ function hidText()
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     if(nS=='false')
     {
-      if(vh<500)
+      if(vh<450)
       {
         hT.style.width="90%";
         hT.style.left="10%";
@@ -19,7 +19,7 @@ function hidText()
     }
     else
     {
-      if(vh<500)
+      if(vh<450)
       {
         hT.style.width="70%";
         hT.style.left="30%";
@@ -39,7 +39,7 @@ window.onscroll = function() {mySticky()};
 var navbar = document.getElementById("navbar");
 var logo= document.getElementById("logo");
 // Get the offset position of the navbar
-var sticky = 800;
+var sticky = 700;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function mySticky() {
