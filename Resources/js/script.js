@@ -5,18 +5,9 @@ function hidText()
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     if(nS=='false')
     {
-      if(vh<600)
-      {
         hT.style.width="90%";
         hT.style.left="10%";
         hT.style.top="40vh";
-      }
-      else
-      {
-        hT.style.top="40vh";
-        hT.style.left="10%";
-        hT.style.width="90%";
-      }
     }
     else
     {
@@ -57,4 +48,3 @@ function mySticky() {
     logo.style.height="75px";
   }
 }
-
