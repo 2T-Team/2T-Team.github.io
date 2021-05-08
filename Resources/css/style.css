@@ -84,6 +84,7 @@ header
     font-weight: 600;
     font-size: 25px;
     margin-top: 10px;
+    z-index: 2000;
 }
 .logo
 {
