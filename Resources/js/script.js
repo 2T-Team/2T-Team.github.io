@@ -5,7 +5,7 @@ function hidText()
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     if(nS=='false')
     {
-      if(vh<60)
+      if(vh<600)
       {
         hT.style.width="90%";
         hT.style.left="10%";
