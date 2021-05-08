@@ -232,6 +232,11 @@ footer{
 {
     text-align: center;
 }
+footer p{
+    padding: 20px;
+    font-size: 110%;
+    font-weight: 400;
+}
 .footer-box{
     margin: 20px 30px;
 }
