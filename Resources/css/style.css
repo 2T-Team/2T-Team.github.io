@@ -96,11 +96,11 @@ header
     text-transform: uppercase;
     font-family: 'Lato',sans-serif;
     color: white;
-    transition: all .5s;
+    transition: all .5s
 }
 .heading-main-box h1
 {
-    margin-left: 10%;
+    transition: all .5s
 }
 /* *********************************************/
 /* ************* ABOUT SECTION *****************/
