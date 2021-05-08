@@ -22,7 +22,7 @@
 /* LG */
 @media all and (min-width: 992px) {  
     .Documents-Box{
-        filter: brightness(80%) blur(0.03px);
+        filter: brightness(80%) blur(0.05px);
     }
     .logo
     {
