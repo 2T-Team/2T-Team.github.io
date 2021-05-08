@@ -5,19 +5,27 @@ function hidText()
     var hTh1=document.getElementById('headerText_h1');
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     if(nS=='false')
-      if(vh<500)
+      if(vh<650)
       {
         hTh1.style.marginLeft="10%";
+        hT.style.top="40vh";
       }
       else
-      hT.style.top="40vh";
+      {
+        hT.style.top="40vh";
+        hTh1.style.marginLeft="10%";
+      }
     else
-      if(vh<500)
+      if(vh<650)
       {
         hTh1.style.marginLeft="30%";
+        hT.style.top="40vh";
       }
       else
+      {
         hT.style.top="70vh";
+        hTh1.style.marginLeft="10%";
+      }
 }
 
 window.onscroll = function() {mySticky()};
