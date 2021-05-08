@@ -65,7 +65,7 @@ body{
     padding-top: 10px !important;
     text-align: center;
     
-    filter: brightness(80%) blur(0.03px);
+    filter: brightness(100%) blur(0px);
 }
 .Documents-Box figure
 {

@@ -272,10 +272,14 @@ header
     border:  3px solid #92d4f3;
     box-shadow: #575757 0px 5px 15px 1px;
     transition: all .5s;
-    filter: brightness(97%) blur(0.03px);
+    filter: brightness(100%);
     margin-bottom: 20px;
 }
-
+.no-pd-xs
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 
 
 .tools-box{
@@ -294,9 +298,7 @@ a{
     float:left;
     text-align: center;
 }
-.forHover{
-    
-}
+
 
 .forHover2 img{
     padding: 5px;
@@ -304,7 +306,7 @@ a{
 
 .forHover2:hover img,
 .forHover2:active img{
-    transform: scale(1.02);
+    transform: scale(1.05);
     filter: brightness(100%) ;
 }
 
