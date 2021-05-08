@@ -63,9 +63,9 @@ body{
 /* *********************************************/
 .img
 {
-    width: 100%;
-    margin: 0 !important;
-    margin-bottom: 20px !important;
+    width: 90%;
+    margin: 5% !important;
+    margin-bottom: 100px !important;
 }
 .row70
 {
@@ -187,6 +187,11 @@ footer{
 .author
 {
     text-align: center;
+}
+footer p {
+    padding: 20px;
+    font-size: 110%;
+    font-weight: 400;
 }
 .footer-box{
     margin: 20px 30px;

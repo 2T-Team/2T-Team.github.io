@@ -19,6 +19,9 @@ html{
 body{
     overflow-x: hidden;
 }
+.fab{
+    margin-right: 5px;
+}
 /* *******************************************/
 /* ************** REUSEABLE ******************/
 /* *******************************************/
@@ -189,7 +192,8 @@ header
     background-color: #DCE0E9 !important;
 }
 .clubs-section h2{
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+    padding-bottom: 40px;
 }
 .clubs-box{
     margin-left:1%;
@@ -244,10 +248,12 @@ header
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 20px;
 }
 
 .tools-section h2{
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    padding-bottom: 40px;
 }
 
 .tools-text{
@@ -288,10 +294,17 @@ a{
     float:left;
     text-align: center;
 }
+.forHover{
+    
+}
+
+.forHover2 img{
+    padding: 5px;
+}
 
 .forHover2:hover img,
 .forHover2:active img{
-    transform: scale(1.008);
+    transform: scale(1.02);
     filter: brightness(100%) ;
 }
 
@@ -308,14 +321,17 @@ a{
     color: #e6e9f0;
     font-size: 130%;
     text-align: center;
+    margin-bottom: 10px;
 }
 footer li
 {
     list-style: none;
     color: #051748;
+    margin-bottom: 5px;
 }
 footer a
 {
+    display: inline;
     color: black;
     transition: color .15s;
 }
@@ -344,6 +360,12 @@ footer{
 {
     text-align: center;
 }
+footer p{
+    padding: 20px;
+    font-size: 110%;
+    font-weight: 400;
+}
+
 .footer-box{
     margin: 20px 30px;
 }

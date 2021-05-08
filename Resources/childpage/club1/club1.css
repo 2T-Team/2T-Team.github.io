@@ -63,9 +63,10 @@ body{
 /* *********************************************/
 .img
 {
-    width: 100%;
-    margin: 0 !important;
-    margin-bottom: 20px !important;
+    width: 90%;
+    margin: 5% !important;
+    margin-bottom: 100px !important;
+    padding: 2px !important;
 }
 .row70
 {
@@ -76,7 +77,8 @@ body{
 h1
 {
     font-size: 80%;
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
+    padding: 20px;
 }
 h1{
     text-transform: uppercase;
@@ -184,6 +186,12 @@ footer{
     padding-bottom: 0px;
 
 }
+footer p{
+    padding: 20px;
+    font-size: 110%;
+    font-weight: 400;
+}
+
 .author
 {
     text-align: center;
