@@ -16,75 +16,81 @@
         rel="stylesheet"> -->
      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/b6328132d1.js" crossorigin="anonymous"></script>
-
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/Resources/childpage/cms/cms.css">
-    <link rel="stylesheet" href="/Resources/vendors/css/grid.css">
     <link rel="stylesheet" href="/Resources/childpage/cms/queries.css">
-
+    <!-- BOOTSTRAP 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 
 <body>
     <header id="home">
-        <nav class="sticky">
-            <a href="/index.html"><img class="logo" src="/Resources/img/pts/HLogo.png" alt="logo"> </a>
-            <ul class="main-nav">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="http://viewdaihoc.fpt.edu.vn/data/projects/vietnam/2019/fptu-hoa-lac/index.html?fbclid=IwAR1Z3dsoyUbxdEp0PY79NU-2LuutGjz5Yc2V7p8Ho2v99PhuWXFdW8ovB00"
-                        target="_blank">Map</a></li>
-                <li><a href="../Documents/index.html">Documents</a></li>
-                <li><a href="#foot">About Us</a></li>           
-            </ul>
-            <i class="fas fa-bars mobile-nav-icon"></i>
+        <nav class="navbar sticky navbar-expand-lg bg-bluet navbar-dark" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img class="logo" id="logo" style="height: 50px;" src="/Resources/img/pts/HLogo.png" alt="logo"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-4"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="http://viewdaihoc.fpt.edu.vn/data/projects/vietnam/2019/fptu-hoa-lac/index.html?fbclid=IwAR1Z3dsoyUbxdEp0PY79NU-2LuutGjz5Yc2V7p8Ho2v99PhuWXFdW8ovB00"
+                            target="_blank">Map
+                        </a>
+                        </li>
+                        <li class="nav-item me-4"><a class="nav-link" href="../Documents/">Documents</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#foot">About Us</a></li>           
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Content -->
     <section class="content">
-        <div class="row">
+        <div class="row70">
             <h1>CMS</h1>
-            <p align="center">
+            <p style="text-align:center;">
             <a href="https://cmshn.fpt.edu.vn/ "target="_blank">(Course Management System)</a>
-            </p><img src="/Resources/img/cms.png" alt="CMS">
+            </p><img class="img-thumbnail img" src="/Resources/img/cms.png" alt="CMS">
             <p>Hệ thống thông tin môn học cực kỳ đầy đủ và chi tiết. 
             <br>Bao gồm hầu hết các khóa học nằm trong chương trình của nhà trường: tiếng anh chuẩn bị, các khóa học được sắp xếp theo từng chuyên ngành giúp các bạn dễ dàng tìm kiếm tài liệu cho ngành học của mình. Giảng viên có thể giao bài tập và sinh viên được thi thử trên CMS không giới hạn tùy môn học.
             </p>
             <p>Địa chỉ : <a href="https://cmshn.fpt.edu.vn/ "target="_blank">https://cmshn.fpt.edu.vn/ </a></p>
         </div>
-</section>
-
-
+    </section>
     <!-- Footer -->
     <footer id="foot">
-        <ul class="footer-box clearfix">
-            <li class="author">
-                <h3>Our Team</h3>
-                <p>Two tables team<br>
-                    &copy; Copyright 2020 - Two tables team
-                </p>
-            </li>
-            <li class="contact">
+        <div class="row footer-box container-fluid no-mlr">
+            <div class="contact col-md-6 6">
                 <h3>Contact</h3>
-                <ul class="social-icons">
-                    <a href="https://www.facebook.com/klwm2k1/" target="_blank">
-                        <li><i class="fab fa-facebook" aria-label="facebook-icon"></i></li>
-                    </a>
-                    <a href="https://github.com/gone2808" target="_blank">
-                        <li><i class="fab fa-github" aria-label="github-icon"></i></li>
-                    </a>
-                    <a href="tel:84972098766" target="_blank">
-                        <li><i class="fas fa-phone" aria-label="phone-icon"></i></li>
-                    </a>
-                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=nguyenmoe2k1@gmail.com"
-                        target="_blank">
-                        <li><i class="fab fa-google-plus-square" aria-label="gmail-icon"></i></li>
-                    </a>
-                </ul>
-            </li>
-        </ul>
-    </footer >
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="/Resources/vendors/js/jquery.waypoints.min.js"></script>
-    <script src="/Resources/js/scripts.js"></script>
+                <ul class="d-block" >
+                    <li><i class="fab fa-facebook" aria-label="facebook-icon"></i><a href="https://www.facebook.com/klwm2k1/" target="_blank">&nbsp;Ngô Quang Hải</a></li>
+                    <li><i class="fab fa-fw" aria-label="facebook-icon"></i><a href="https://www.facebook.com/frostpixel/" target="_blank">Bạch Ngọc Minh Châu</a></li>
+                    <li><i class="fab fa-github" aria-label="github-icon"></i><a href="https://github.com/gone2808" target="_blank">&nbsp;gone2808</a></li>
+                    <!-- <li><i class="fas fa-phone" aria-label="phone-icon"></i><a href="tel:84972098766" target="_blank">&nbsp;(+84)972098766</a></li> -->
+                    <li><i class="fab fa-google-plus-square" aria-label="gmail-icon"></i><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=nguyenmoe2k1@gmail.com"
+                        target="_blank">&nbsp;nguyenmoe2k1@gmail.com</a></li>
+                    <li><i class="fab fa-fw d-none d-sm-inline-block" aria-label="gmail-icon"></i><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=chaubnmhe153019@fpt.edu.vn"
+                            target="_blank">chaubnmhe153019@fpt.edu.vn</a></li>
+                </ul> 
+            </div>
+            <div class="author col-md-6">
+                <h3>Our Team</h3>
+                <p>
+                    Two tables team<br>
+                    &copy; Copyright 2021 - Two tables team
+                </p>   
+            </div>    
+        </div>
+        <!-- COUNTER -->
+        <div class="container-fluid row"> 
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7708311&style=0006&nbdigits=5&type=ip&initCount=0" title="Unique Visitors" alt="Web Hits"  /></a>     
+        </div>
+    </footer>
+    <!-- JS -->
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 
 </html>
