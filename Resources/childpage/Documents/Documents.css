@@ -64,8 +64,7 @@ body{
 .Documents-Box{
     padding-top: 10px !important;
     text-align: center;
-    
-    filter: brightness(100%) blur(0px);
+    filter: brightness(100%);
 }
 .Documents-Box figure
 {
@@ -80,7 +79,7 @@ body{
 .forHover:hover img,
 .forHover:active img{
     transition: all 1s;
-    transform: scale(1.03);
+    transform: scale(1.05);
     box-shadow: #0f8ac4 0px 5px 15px 5px;
     filter: brightness(120%) ;
 }
