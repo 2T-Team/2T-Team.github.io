@@ -2,32 +2,33 @@ function hidText()
 {
     var nS=document.getElementById('nav-button').getAttribute("aria-expanded");
     var hT=document.getElementById('headerText');
-    var hTh1=document.getElementById('headerText_h1');
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     if(nS=='false')
     {
       if(vh<650)
       {
-        hTh1.style.marginLeft="10%";
+        hT.style.width="90%";
+        hT.style.left="10%";
         hT.style.top="40vh";
       }
       else
       {
         hT.style.top="40vh";
-        hTh1.style.marginLeft="10%";
+        hT.style.left="10%";
       }
     }
     else
     {
       if(vh<650)
       {
-        hTh1.style.marginLeft="30%";
+        hT.style.width="70%";
+        hT.style.left="30%";
         hT.style.top="40vh";
       }
       else
       {
         hT.style.top="70vh";
-        hTh1.style.marginLeft="10%";
+        hT.style.left="10%";
       }
     }
 }
