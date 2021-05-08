@@ -5,7 +5,7 @@ function hidText()
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     if(nS=='false')
     {
-      if(vh<650)
+      if(vh<500)
       {
         hT.style.width="90%";
         hT.style.left="10%";
@@ -19,7 +19,7 @@ function hidText()
     }
     else
     {
-      if(vh<650)
+      if(vh<500)
       {
         hT.style.width="70%";
         hT.style.left="30%";
