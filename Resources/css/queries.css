@@ -19,6 +19,10 @@
 }
 /* LG */
 @media all and (min-width: 992px) { 
+    header
+    {
+        background-attachment: fixed;
+    }
     .tools-picture{
         filter: brightness(95%);
     }
