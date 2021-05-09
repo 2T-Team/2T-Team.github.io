@@ -11,7 +11,7 @@ function hidText()
     }
     else
     {
-      if(vh<600)
+      if(vh<550)
       {
         hT.style.width="70%";
         hT.style.left="30%";
